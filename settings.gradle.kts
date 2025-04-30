@@ -9,6 +9,11 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+
+        maven { url = uri("https://jitpack.io") }
+        maven {
+            url = uri("https://maven.google.com")
+        }
     }
 }
 dependencyResolutionManagement {
@@ -16,9 +21,15 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
+
+        maven { url = uri("https://jitpack.io") }
+        maven {
+            url = uri("https://maven.google.com")
+        }
     }
 }
 
 rootProject.name = "AV Clean Android Kit"
 include(":app")
- 
+include(":core")
