@@ -46,3 +46,4 @@ dependencies {
     androidTestApi(libs.androidx.junit)
     androidTestApi(libs.androidx.espresso.core)
 }
+tasks.getByPath("preBuild").dependsOn("ktlintFormat")
